@@ -14,15 +14,14 @@ GPG
 
 2- gpg --full-generate-key (gerar chave)
 
-3- gpg --armor --export 99C0DC47340E574C ```ID DA SUA CHAVE``` (exportar chave)
+3- gpg --armor --export-secret-keys 3B037003A0818872 | gpg --import (exportar chave)
 
-4- git config --global user.signingkey 99C0DC47340E574C ```ID DA SUA CHAVE``
+4- gpgconf --kill gpg-agent
 
-5- export GPG_TTY=$(tty) (exportar tty)
+5 - git config --global commit.gpgSign true
 
-6- git config --global commit.gpgsign true (configurar gpgsign)
+6-  git config --global gpg.program "C:\Program Files (x86)\GnuPG\bin\gpg.exe"
 
-7- git log --show-signature (verificar se a assinatura está funcionando)
+7- git config user.signingkey 3B037003A0818872
   
-
-  
+8- git config --global user.signingkey 35F5FFB2
