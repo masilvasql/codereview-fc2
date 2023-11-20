@@ -14,9 +14,12 @@ GPG
 
 2- gpg --full-generate-key (gerar chave)
 
-3- gpg --armor --export ```ID DA SUA CHAVE``` (exportar chave)
+3- gpg --armor --export 1CC0D6D7797D7A9C ```ID DA SUA CHAVE``` (exportar chave)
 
 4- git config --global user.signingkey ```ID DA SUA CHAVE``
 
 5- export GPG_TTY=$(tty) (exportar tty)
+
 6- git config --global commit.gpgsign true (configurar gpgsign)
+
+7- git log --show-signature (verificar se a assinatura está funcionando)
