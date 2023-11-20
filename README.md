@@ -6,7 +6,7 @@
 
 4- Finalizado a branch de feature com o comando: ```git flow feature finish welcome```
 
- 
+    
 ________________________________
 GPG
 
