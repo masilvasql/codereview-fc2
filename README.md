@@ -25,3 +25,5 @@ GPG
 7- git config user.signingkey 3B037003A0818872
   
 8- git config --global user.signingkey 35F5FFB2
+
+teste
